@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Santander Flame</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+	type="text/javascript"></script>
+	<script type='text/javascript' src='jquery.backstretch.min.js'></script>
+	<script type='text/javascript' src='classie.js'></script>
+
+</head>
+
+<body>
+	<div class="loginmodal">
+		<img class="animated slideInUp" src="img/login.png" />
+	</div>
+	<div class="pagecontainer">
+		<header>
+			<img class="logo" src="img/logo.png" />
+			<div class="headerbuttons">
+				<button class="demolink">See the demo</button>
+				<button class="loginlink">Login</button>
+			</div>
+			<h1>Welcome to Santander Flame</h1>
+			<p>Your personal portal for all your foreign exchange transactions</p>
+		</header>
+		<section class="first">
+			<div class="container clearfix">
+				<div class="text">
+					<h2>Rate Transparancy</h2>
+					<p class="blurb">We always show you the inter-bank spot rate, so you have the confidence in our transparent and competitive rates which have no hidden charges.</p>
+				</div>
+				<img class="rates" src="img/rates.png" />
+			</div>
+		</section>
+		<section class="even">
+			<div class="container clearfix">
+				<div class="text">
+					<h2>Intuitive User Interface</h2>
+					<p class="blurb">Santander Flame has been designed with you in mind. It has been designed to allow you to manage your FX exposure with nothing else in the way, giving you the tools you need to manage the workflow from start to finish.</p>
+					<button>Get Santander Flame</button>
+					<p class="buttonhint"> Already a customer? You could be using Santander Flame faster than you think.</p>
+				</div>
+				<img class="featureimage homepage" src="img/homepage.png" />
+			</div>
+		</section>
+		<section class="odd">
+			<div class="container clearfix">
+				<div class="text">
+					<h2>Your To-Do List.<br />Without ever lifting a pen.</h2>
+					<p class="blurb">Santander Flame automatically creates a To Do list based on everything that’s happening in your business. Got a trade to Confirm? Santander Flame will prompt you to send the one-click Confirmation in a familiar and easy-to-use calendar.</p>
+					<button>View our Interactive Demo</button>
+				</div>
+				<img class="featureimage homepage" src="img/calendar.png" />
+			</div>
+		</section>
+		<section class="even">
+			<div class="container clearfix">
+				<div class="text">
+					<h2>Always on, always connected.</h2>
+					<p class="blurb">Santander Flame runs on your smartphone, allowing you to monitor your rades, orders and more.</p>
+					<button>View our Interactive Demo</button>
+				</div>
+				<img class="featureimage iphone" src="img/iphone.png" />
+			</div>
+		</section>
+		<section class="featuresection">
+			<div class="container clearfix">
+				<div class="text">
+					<h2>All the essentials. With more coming...</h2>
+					<p class="blurb">Santander Flame gives you everything you need to trade. But we're not done yet... We're committed to providing you with a complete experience, from trade research to 3rd party payments.</p>
+				</div>
+				<div class="featurecontainer clearfix">
+					<div class="feature">
+						<h3>Spot Trading</h3>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum.</p>
+					</div>
+					<div class="feature">
+						<h3>Multi Trading</h3>
+						<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					</div>
+					<div class="feature">
+						<h3>Orders</h3>
+						<p>Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+					</div>
+					<div class="feature">
+						<h3>Time Options</h3>
+						<p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+					</div>
+					<div class="feature">
+						<h3>Trade Confirmations</h3>
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div class="feature">
+						<h3>Research</h3>
+						<p>Cras mattis consectetur purus sit amet fermentum.</p>
+					</div>
+					<div class="feature">
+						<h3>Trade Limits</h3>
+						<p>Donec id elit non mi porta gravida at eget metus.</p>
+					</div>
+					<div class="releasehistory">
+						<button>View Release History</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container clearfix">
+				<img class="contactform" src="img/form.png" />
+				<div class="login-footer">
+			        <ul>
+			            <li><span class="item">Terms &amp; Conditions</span></li>
+			            <li><span class="item">Risk Disclosure</span></li>
+			            <li><span class="item">Cookie Policy</span></li>
+			            <li><span class="item">Company Info</span></li>
+			            <li><span class="item last">Cyber Attacks</span></li>
+			        </ul>
+	    		</div>
+	    	</div>
+		</footer>
+	</div>
+	<script type='text/javascript'>
+ 		 $(".first").backstretch("img/bkgdark.jpg");
+
+ 		 function init() {
+		    window.addEventListener('scroll', function(e){
+		        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+		            shrinkOn = 200,
+		            header = document.querySelector("header");
+		        if (distanceY > shrinkOn) {
+		            classie.add(header,"smaller");
+		        } else {
+		            if (classie.has(header,"smaller")) {
+		                classie.remove(header,"smaller");
+		            }
+		        }
+		    });
+		}
+		window.onload = init();
+
+		$(".loginlink").click(function() {
+		  $(".pagecontainer").addClass("blur");
+		  $(".loginmodal").show();
+		});
+
+		$(".loginmodal").click(function() {
+		  $(".pagecontainer").removeClass("blur");
+		  $(".loginmodal").hide();
+		});
+
+	</script>
+</body>
+</html>
