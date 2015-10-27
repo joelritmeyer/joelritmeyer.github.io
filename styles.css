@@ -366,7 +366,7 @@ footer .featureimage {
 }
 
 .featureimage.trading {
-	margin-left: -45px;
+	margin: 50px 0 50px -45px;
 }
 
 .features .text {
