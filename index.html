@@ -9,6 +9,10 @@
 	type="text/javascript"></script>
 	<script type='text/javascript' src='jquery.backstretch.min.js'></script>
 	<script type='text/javascript' src='classie.js'></script>
+	<script type='text/javascript' src='wow.min.js'></script>
+	<script type="text/javascript">
+	  new WOW().init();
+	</script>
 
 </head>
 
@@ -60,7 +64,7 @@
 		</section>
 		<section class="even features">
 			<div class="container clearfix">
-				<div class="text">
+				<div class="text wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0.4s">
 					<h2>Fast, Simple Trading</h2>
 					<p class="blurb">Santander Flame has all  the core FX Products that you’ll need to manage the FX exposure of your business.</p>
 					<h3>Trading Functions</h3>
@@ -73,29 +77,29 @@
 					<button>Get Santander Flame</button>
 					<p class="buttonhint"> Already a customer? You could be using Santander Flame faster than you think.</p>
 				</div>
-				<img class="featureimage trading" src="img/trading.png" />
+				<img class="featureimage trading wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s" src="img/trading.png" />
 			</div>
 		</section>
 		<section class="odd">
 			<div class="container clearfix">
-				<div class="text">
+				<div class="text wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
 					<h2>Customisable and flexible. Make Santander Flame work for you.</h2>
 					<p class="blurb">Santander Flame is flexible, and can be customised to suit your spefici worflows. For example, all blotters contain advanced filtering controls, and can be used to generate reports such as “Trades settling this week” or “My Trades”. These reports can be accessed when you need them most, or exported to Excel for further analysis.<br /><br />And that’s just the start...</p>
 					<button>View our Interactive Demo</button>
 					<button class="bodydemolink">See the demo</button>
 				</div>
-				<img class="featureimage" src="img/blotter.png" />
+				<img class="featureimage wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0.4s" src="img/blotter.png" />
 			</div>
 		</section>
 		<section class="even">
 			<div class="container clearfix">
-				<div class="text">
+				<div class="text wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0.4s">
 					<h2>Your To-Do List.<br />Without ever lifting a pen.</h2>
 					<p class="blurb">Santander Flame automatically creates a To Do list based on everything that’s happening in your business. Got a trade to Confirm? Santander Flame will prompt you to send the one-click Confirmation in a familiar and easy-to-use calendar.</p>
 					<button class="bodydemolink">See the demo</button>
 					<button>Ask about Santander Flame</button>
 				</div>
-				<img class="featureimage homepage" src="img/calendarleft.png" />
+				<img class="featureimage homepage wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s" src="img/calendarleft.png" />
 			</div>
 		</section>
 		
@@ -147,7 +151,8 @@
 		$(".loginmodal").click(function() {
 		  $(".pagecontainer").removeClass("blur");
 		  $(".loginmodal").hide();
-		});
+		});             
+
 
 	</script>
 </body>
