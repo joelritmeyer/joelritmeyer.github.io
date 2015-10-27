@@ -1,6 +1,9 @@
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
+p {
+	margin:0;
+}
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -72,43 +75,14 @@ h3 {
 	font-size: 20px;
 	color: #ec0000;
 	margin: 0;
-}
-
-.loginmodal {
-	display: none;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0,0,0,0.5);
-	z-index: 100;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.loginmodal img {
-	margin: auto;
-	margin-top: 5%;
-	display: block;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+	font-weight: 400; 
 }
 
 header {
-	height: 300px;
+	height: 80px;
 	width: 100%;
-	background-image: -moz-linear-gradient( 90deg, rgb(139,3,5) 0%, rgb(213,25,32) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(139,3,5) 0%, rgb(213,25,32) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(139,3,5) 0%, rgb(213,25,32) 100%);
-	box-shadow: 2px 3.464px 0px 0px rgba(104, 10, 12, 0.004);
-	border-bottom: 4px solid #680a0c;
+	background: #ec0000;
+	border-bottom: 3px solid #a91d1d;
 	color: #fff;
     overflow: hidden;
     position: fixed;
@@ -123,16 +97,21 @@ header {
 }
 
 header.smaller {
-	height: 80px;
+	height: 50px;
 }
 
-header.smaller img {
-	margin: 16px 0 0 20px;
+header.smaller .logo {
+	margin: 8px 0 0 20px;
+	width: 140px;
 }
 
 header.smaller .headerbuttons {
-	right: 20px;
-	top: 20px;
+	right: 10px;
+	top: 10px;
+}
+
+header.smaller .headerbuttons button {
+	padding: 8px 15px
 }
 
 button {
@@ -161,6 +140,7 @@ button:hover {
 	line-height: 20px;
 	float: right;
 	width: 300px;
+	margin-top: 8px;
 }
 
 .demolink {
@@ -169,8 +149,18 @@ button:hover {
   	box-shadow: 0px 2px 0px 0px #8b1e1e;
 }
 
+.bodydemolink {
+	background-color: #5b5a5b;
+	color: #fff;
+  	box-shadow: 0px 2px 0px 0px #3b3b3b;
+}
+
 .demolink:hover {
 	background-color: #ffd6d6;
+}
+
+.bodydemolink:hover {
+	background-color: #3b3b3b;
 }
 
 .loginlink {
@@ -190,34 +180,101 @@ header p {
 }
 
 .logo {
-	margin: 30px 0 0 30px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+	margin: 14px 0 0 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .headerbuttons {
 	position: absolute;
 	right: 30px;
-	top: 30px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+	top: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.mainsection {
+	padding-top: 80px;
+	width: 100%;
+}
+
+.mainsection .container {
+	height: 540px;
+
+}
+
+.login-brackets {
+    height: 218px;
+    width: 603px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+    top: 50px;
+    left: 50px;
+    background: url('img/brackets.png');
+    background-size: contain;
+}
+
+.welcome.heading {
+    font-size: 30px;
+    color: #ec0000;
+    padding-top: 52px;
+}
+
+.welcome.tagline {
+    font-size: 24px;
+    color: #333;
+    width: 450px;
+}
+
+/*@media screen and (max-height: 899px) {*/
+	.welcome.heading {
+	    font-size: 23px;
+	    padding-top: 38px;
+	}
+
+	.login-brackets .welcome {
+	    padding: 0 58px;
+	}
+	
+	.login-brackets {
+	    height: 160px;
+	    width: 440px;
+	}
+
+	.welcome.tagline {
+	    font-size: 17px;
+	    width: 324px;
+	}
+
+	.welcome.heading {
+	    font-size: 23px;
+	    padding-top: 38px;
+	}
+/*}*/
+
+.loginform {
+	position: absolute;
+	right: 50px;
+	top:0;
+	bottom:0;
+	margin:auto;
 }
 
 section {
 	position: relative;
 	border-bottom: 1px solid #dddddd;
-	min-height: 500px;
+	/*min-height: 500px;*/
 }
 
 section.first {
-	height: 500px;
-	margin-top: 300px;
+	height: 250px;
 }
 
 .container {
@@ -243,13 +300,32 @@ section.first {
 
 .first .text {
 	width: 400px;
-	left: 30px;
-	color: #fff;
-	text-shadow: 1px 1px #000;
 }
 
 .rates {
 	float: right;
+	width: 39%;
+	height: 50%;
+}
+
+.ratecontainer {
+	float: left;
+	width: 210px;
+	margin-bottom: 35px;
+}
+
+.ratecontainer .currencypair {
+	font-size: 18px;
+	color: #888;
+}
+
+.ratecontainer .rate {
+	font-size: 30px;
+	color: #333;
+}
+
+.ratecontainer.bottomrow {
+	margin: 0;
 }
 
 .even .text {
@@ -262,13 +338,17 @@ section.first {
 	background-color: #f0f0f0;
 }
 
+.even {
+	background-color: #f5f5f5;
+}
+
 .odd .text {
 	width: 440px;
 	left: 30px;
 	text-align: left;
 }
 
-.featureiamge {
+.featureimage {
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -280,84 +360,65 @@ section.first {
 	float: left;
 }
 
-.odd .featureimage {
+.odd .featureimage,
+footer .featureimage {
 	float: right;
 }
 
-.featuresection {
-	background-color: #f0f0f0;
+.featureimage.trading {
+	margin-left: -45px;
 }
 
-.featuresection .text {
-	position: relative;
-	width: 800px;
-	margin: 0;
-	text-align: left;
-}
-
-.featuresection .blurb {
-	width: 800px;
-	/*margin: 0 auto 30px auto;*/
-}
-
-.featurecontainer {
-	/*margin-top: 50px;*/
-}
-
-.feature {
-	width: 45%;
-	position: relative;
-	padding-left: 30px;
-	text-align: left;
-	float: left;
-}
-
-.feature:nth-child(odd) {
-	margin-right: 40px;
-}
-
-.feature h3 {
-	font-size: 18px;
-	line-height: 40px;
-}
-
-.feature p {
-	font-size: 14px;
-	margin-top:0;
-}
-
-.releasehistory {
-	padding-left: 30px;
-	margin-top: 20px;
-	float: left;
-}
-
-/*.feature:after {
-	content: '';
-	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 40px;
-	border: 1px solid #ddd;
-	position: absolute;
-	left: 0;
-	top:0;
-}*/
-
-.feature:before {
-	content: url('img/tick.png');
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-
-.iphone {
-	margin-left: 130px;
+.features .text {
+	height: 75%
 }
 
 footer {
 	background-color: #333;
 	position: relative;
+	padding-bottom: 60px;
+	height: 533px;
+}
+
+footer h2 {
+	color: #fff;
+}
+
+footer p {
+	margin-bottom: 30px;
+}
+
+footer .footertext {
+	width: 40%;
+	position: absolute;
+	left: 0;
+}
+
+footer .firstfooterparagraph {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+}
+
+footer .secondfooterparagraph {
+	font-size: 14px;
+	line-height: 20px;
+	color: #ababab;
+}
+
+footer .phonenumber,
+footer .emailaddress,
+footer .emailaddress a {
+	font-size: 14px;
+	color: #ababab;
+}
+
+footer .emailaddress {
+	margin-left: 70px;
+}
+
+footer .emailaddress a:hover {
+	color: #fff;
 }
 
 .login-footer {
@@ -397,31 +458,10 @@ footer {
     padding-left: 5px;
 }
 
-@media (max-width: 1100px) {
-  .featureimage {
-    width: 300px;
-  }
-  header {
-  	height: 200px;
-  }
-  h1 {
-  	font-size: 30px;
-  	padding-top: 20px;
-  }
-  header p {
-  	font-size: 18px;
-  }
-  section.first {
-  	margin-top: 200px;
-  }
-  .feature {
-  	width: 100%;
-  }
-  .feature:nth-child(odd) {
-  	margin-right: 0;
-  }
-  .text {
-  	width: 100%;
-  }
-}
 
+@media (min-width: 1100px) and (min-height: 1100px) {
+	.mainsection .container {
+		height: 640px;
+
+	}
+}
