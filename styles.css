@@ -272,10 +272,10 @@ section {
 	border-bottom: 1px solid #dddddd;
 	/*min-height: 500px;*/
 }
-
+/*
 section.first {
 	height: 250px;
-}
+}*/
 
 .container {
 	width: 90%;
@@ -306,6 +306,7 @@ section.first {
 	float: right;
 	width: 39%;
 	height: 50%;
+	position: relative;
 }
 
 .ratecontainer {
@@ -326,6 +327,12 @@ section.first {
 
 .ratecontainer.bottomrow {
 	margin: 0;
+}
+
+.seemore {
+	position: absolute;
+	bottom: -31px;
+	right: 233px;
 }
 
 .even .text {
@@ -460,6 +467,14 @@ footer .emailaddress a:hover {
 
 
 @media (min-width: 1100px) and (min-height: 1100px) {
+	.mainsection .container {
+		height: 640px;
+
+	}
+}
+
+
+@media (min-width: 1215px) {}
 	.mainsection .container {
 		height: 640px;
 
