@@ -304,14 +304,21 @@ section.first {
 
 .rates {
 	float: right;
-	width: 39%;
+	width: 30%;
 	height: 50%;
 	position: relative;
 }
 
+.ratesdatetime {
+	font-size: 13px;
+	color: #888;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
 .ratecontainer {
 	float: left;
-	width: 210px;
+	width: 250px;
 	margin-bottom: 35px;
 }
 
@@ -329,10 +336,12 @@ section.first {
 	margin: 0;
 }
 
-.seemore {
-	position: absolute;
-	bottom: -31px;
-	right: 233px;
+.ratecontainer.right {
+	width: auto;
+}
+
+.addccyp {
+	margin-top: 50px;
 }
 
 .even .text {

@@ -15,6 +15,10 @@
 	  new WOW().init();
 	</script>
 
+    <script type="text/javascript" src="date_time.js"></script>	
+	
+
+
 </head>
 
 <body>
@@ -44,11 +48,15 @@
 					<p class="blurb">We always show you the real time inter-bank spot rate, so you have the confidence in our transparent and competitive rates which have no hidden charges.</p>
 				</div>
 				<div class="rates clearfix">
+					<p class="ratesdatetime">Live interbank mid spot price: 
+						<span id="date_time"></span>
+						<script type="text/javascript">window.onload = date_time('date_time');</script>
+		            </p>
 					<div class="ratecontainer">
 						<p class="currencypair">GBPUSD</p>
 						<p class="rate">1.5512</p>
 					</div>
-					<div class="ratecontainer">
+					<div class="ratecontainer right">
 						<p class="currencypair">GBPEUR</p>
 						<p class="rate">1.3729</p>
 					</div>
@@ -56,11 +64,11 @@
 						<p class="currencypair">EURUSD</p>
 						<p class="rate">1.1360</p>
 					</div>
-					<div class="ratecontainer bottomrow">
+					<div class="ratecontainer bottomrow right">
 						<p class="currencypair">EURGBP</p>
 						<p class="rate">0.7281</p>
 					</div>
-					<img class="seemore" src="img/seemore.png" />
+					<img class="addccyp" src="img/addccyp.png">
 				</div>
 			</div>
 		</section>
